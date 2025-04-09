@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# 💰 Costs - Gerenciador de Projetos e Custos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📝 Sobre o Projeto
 
-## Available Scripts
+O **Costs** é uma aplicação desenvolvida para praticar e aprimorar minhas habilidades com **React**. O objetivo do projeto é fornecer uma interface intuitiva para **gerenciar projetos e controlar custos**, permitindo que o usuário cadastre, edite e visualize seus gastos de forma eficiente.
 
-In the project directory, you can run:
+## 🚀 Tecnologias Utilizadas
 
-### `npm start`
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚛️ **React** - Biblioteca JavaScript para criação de interfaces interativas
+- 🎨 **CSS/Styled Components** - Estilização da aplicação
+- 📦 **React Router** - Gerenciamento de rotas dentro da aplicação
+- 🔥 **JSON Server (mock API)** - Simulação de um backend para manipulação de dados
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Como Executar o Projeto
 
-### `npm test`
+### 🔧 Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-### `npm run build`
+- [Node.js](https://nodejs.org/) + [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📥 Clonando o Repositório
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Clone este repositório
+git clone git@github.com:alveshenriique/Costs.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Acesse a pasta do projeto
+cd Costs
+```
 
-### `npm run eject`
+### 📦 Instalando Dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Instale as dependências
+npm install  # ou yarn install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ▶️ Executando o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Inicie o servidor JSON (se estiver utilizando o JSON Server como mock API)
+npm run server  # ou yarn server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Inicie a aplicação React
+npm start  # ou yarn start
+```
 
-## Learn More
+O projeto será aberto em `http://localhost:3000/`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👨‍💻 Autor
 
-### Code Splitting
+Desenvolvido por **Henrique Alves** 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⚠️ **Nota:** Este projeto é para fins de estudo e pode conter melhorias futuras.
