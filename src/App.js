@@ -5,16 +5,13 @@ import Contact from "./components/pages/Contact";
 import NewProject from "./components/pages/NewProject";
 
 import Container from "./components/layout/Container";
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
 
 function App() {
   return (
     <Router>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/company">Company</Link>
-        <Link to="/newproject">New Project</Link>
-      </div>
+      <Navbar/>
       <Container customClass="min-height">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +20,7 @@ function App() {
           <Route path="/newproject" element={<NewProject />} />
         </Routes>
       </Container>
-      <p>Footer</p>
+      <Footer/>
     </Router>
   );
 }
