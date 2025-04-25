@@ -21,6 +21,7 @@
     "backend": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "tailwhind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
   }
 }
