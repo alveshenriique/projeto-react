@@ -2,12 +2,14 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Message from "../layouts/Message";
 import Container from "../layouts/Container";
+import Loading from "../layouts/Loading";
 import LinkButton from "../layouts/LinkButton";
 import styles from "./Projects.module.css";
 import ProjectCard from "../projects/ProjectCard";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [removeLoading, setRemoveLoading] = useState(false);
 
   const location = useLocation();
   let message = "";
@@ -16,17 +18,20 @@ function Projects() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:5000/projects', {
-      method: 'GET',
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setProjects(data);
+    setTimeout(() => {
+      fetch("http://localhost:5000/projects", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .catch((err) => console.log(err));
+        .then((resp) => resp.json())
+        .then((data) => {
+          setProjects(data);
+          setRemoveLoading(true);
+        })
+        .catch((err) => console.log(err));
+    }, 500);
   }, []);
 
   return (
@@ -42,11 +47,15 @@ function Projects() {
             <ProjectCard
               name={project.name}
               id={project.id}
-              budget={project.budget}
+              budget={parseFloat(project.budget).toLocaleString("pt-BR")}
               category={project.category.name}
               key={project.id}
             />
           ))}
+        {!removeLoading && <Loading />}
+        {!removeLoading && projects.length === 0 &&(
+          <p>Nao há projetos cadastrados!</p>
+        )}
       </Container>
     </div>
   );
