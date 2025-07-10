@@ -76,7 +76,7 @@
   transition: 0.5s;
 }
 
-.project.card_actions svg {
+.project_card_actions svg {
   margin-right: 0.5em;
 }
 

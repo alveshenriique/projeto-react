@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "id": "8b71",
-      "name": " Lib",
-      "budget": "15530",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "a086",
       "name": " Nvidea",
       "budget": "15000",
@@ -19,8 +8,15 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 1500,
+      "services": [
+        {
+          "name": "Designer Gráfico",
+          "cost": "1500",
+          "description": "Desginer de interface visual figma",
+          "id": "5c6e2d4c-b88c-4dfa-a7a5-9125d64d0e2c"
+        }
+      ]
     },
     {
       "id": "a9b1",
@@ -36,39 +32,6 @@
     {
       "id": "f011",
       "name": " Estrelar",
-      "budget": "5000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "3c4e",
-      "name": " ProjetoReact",
-      "budget": "16500",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "fdf7",
-      "name": " ProjetoReact",
-      "budget": "1500",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "5096",
-      "name": " ProjetoJava",
       "budget": "5000",
       "category": {
         "id": "3",
